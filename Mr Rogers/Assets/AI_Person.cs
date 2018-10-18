@@ -21,9 +21,12 @@ public class AI_Person : MonoBehaviour {
 
     void Decide()
     {
-        Debug.Log("Decide");
         Invoke("Decide", 1);
-        body.velocity = Vector3.zero;
-        body.velocity = speed * new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+        if (!grasped)
+        {
+            Debug.Log("Decide");
+            body.velocity = Vector3.zero;
+            body.velocity = speed * new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+        }
     }
 }
