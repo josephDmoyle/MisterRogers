@@ -5,6 +5,7 @@ using UnityEngine;
 public class AI_Person : MonoBehaviour {
     public bool grasped = false;
     [SerializeField] float speed;
+    float x, z;
     Rigidbody body;
     private void Awake()
     {
@@ -16,7 +17,10 @@ public class AI_Person : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-        
+        if (!grasped)
+        {
+            body.velocity = speed * new Vector3(x, 0, z);
+        }
     }
 
     void Decide()
@@ -26,7 +30,8 @@ public class AI_Person : MonoBehaviour {
         {
             Debug.Log("Decide");
             body.velocity = Vector3.zero;
-            body.velocity = speed * new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+            x = Random.Range(-1f, 1f);
+            z = Random.Range(-1f, 1f);
         }
     }
 }
