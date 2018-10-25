@@ -19,7 +19,7 @@ public class AI_Person : MonoBehaviour {
 	void FixedUpdate () {
         if (!grasped)
         {
-            body.velocity = speed * new Vector3(x, 0, z);
+            body.velocity = speed * new Vector3(x, body.velocity.y, z);
         }
     }
 
@@ -29,7 +29,6 @@ public class AI_Person : MonoBehaviour {
         if (!grasped)
         {
             Debug.Log("Decide");
-            body.velocity = Vector3.zero;
             x = Random.Range(-1f, 1f);
             z = Random.Range(-1f, 1f);
         }
