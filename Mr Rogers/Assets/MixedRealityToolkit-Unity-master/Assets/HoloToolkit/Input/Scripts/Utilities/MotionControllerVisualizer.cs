@@ -23,6 +23,7 @@ using Windows.Storage.Streams;
 
 namespace HoloToolkit.Unity.InputModule
 {
+
     /// <summary>
     /// This script spawns a specific GameObject when a controller is detected
     /// and animates the controller position, rotation, button presses, and
@@ -30,6 +31,19 @@ namespace HoloToolkit.Unity.InputModule
     /// </summary>
     public class MotionControllerVisualizer : Singleton<MotionControllerVisualizer>
     {
+
+
+        [Tooltip("This setting will be used to determine the visibilitity of ray. If flase, the ray will not be visible")]
+        public bool displayPointerRay = true;
+
+        [Tooltip("This setting will be used to determine the line of the LeftPointer")]
+        public LineRenderer LeftPointerLine;
+        [Tooltip("This setting will be used to determine the line of the RightPointer")]
+        public LineRenderer RightPointerLine;
+        [Tooltip("This setting will be used to determine the distance of line from pointer to cursor")]
+        public float lineDistance = 100f;
+
+        
         [Tooltip("This setting will be used to determine if the model, override or otherwise, should attempt to be animated based on the user's input.")]
         public bool AnimateControllerModel = true;
 
@@ -51,6 +65,8 @@ namespace HoloToolkit.Unity.InputModule
         [Tooltip("This material will be used on the loaded glTF controller model. This does not affect the above overrides.")]
         [SerializeField]
         protected UnityEngine.Material GLTFMaterial;
+
+
 
 #if UNITY_WSA && UNITY_2017_2_OR_NEWER
         // This will be used to keep track of our controllers, indexed by their unique source ID.
@@ -129,11 +145,19 @@ namespace HoloToolkit.Unity.InputModule
         private void UpdateControllerState()
         {
 #if UNITY_WSA && UNITY_2017_2_OR_NEWER
+
             foreach (var sourceState in InteractionManager.GetCurrentReading())
             {
+                LineRenderer line;
                 MotionControllerInfo currentController;
+
+
+
+
                 if (sourceState.source.kind == InteractionSourceKind.Controller && controllerDictionary.TryGetValue(GenerateKey(sourceState.source), out currentController))
                 {
+
+
                     if (AnimateControllerModel)
                     {
                         currentController.AnimateSelect(sourceState.selectPressedAmount);
@@ -163,13 +187,111 @@ namespace HoloToolkit.Unity.InputModule
                     if (sourceState.sourcePose.TryGetPosition(out newPosition, InteractionSourceNode.Grip) && ValidPosition(newPosition))
                     {
                         currentController.ControllerParent.transform.localPosition = newPosition;
+
+                        //***  Custom Ray logic
+
+                        //InteractionInputSource currentController;
+                        //line = currentController == InteractionSourceHandedness.Left ? LeftPointerLine : RightPointerLine;
+
+                        if (currentController.Handedness == InteractionSourceHandedness.Left)
+                        {
+                            Debug.LogWarning("Left Controller Active, creating Ray !!!!");
+                            line = LeftPointerLine;
+
+                            if (displayPointerRay && line != null)
+                            {
+
+                                //***  Custom Ray Logic
+                                if (!line.enabled)
+                                    line.enabled = true;
+
+                                Vector3[] linePositions = new Vector3[2];
+                                linePositions[0] = currentController.ControllerParent.transform.position;
+
+                                // // Original writers cursore snippet var inputSourcePointer ;   [=  TQCursorManager.instance.pointer as InputSourcePointer]
+
+                                Quaternion pointerRotation;
+                                if (sourceState.sourcePose.TryGetRotation(out pointerRotation, InteractionSourceNode.Pointer) && ValidRotation(pointerRotation))
+                                {
+                                    linePositions[1] = sourceState.headPose.position + (pointerRotation * Vector3.forward * lineDistance);
+                                }
+
+                                line.SetPositions(linePositions);
+
+
+                            }
+                            else
+                            {
+
+                                if (line != null && line.enabled)
+                                    line.enabled = false;
+
+                            }
+                        }
+
+
+                        if (currentController.Handedness == InteractionSourceHandedness.Right)
+                        {
+                            Debug.LogWarning("Right Controller Active, creating Ray !!!!");
+                            line = RightPointerLine;
+
+                            if (displayPointerRay && line != null)
+                            {
+
+                                //*** JJ Custom Ray Logic
+                                if (!line.enabled)
+                                    line.enabled = true;
+
+                                Vector3[] linePositions = new Vector3[2];
+                                linePositions[0] = currentController.ControllerParent.transform.position;
+
+                                // // Original writers cursore snippet var inputSourcePointer ;   [=  TQCursorManager.instance.pointer as InputSourcePointer]
+
+                                Quaternion pointerRotation;
+                                if (sourceState.sourcePose.TryGetRotation(out pointerRotation, InteractionSourceNode.Pointer) && ValidRotation(pointerRotation))
+                                {
+                                    linePositions[1] = sourceState.headPose.position + (pointerRotation * Vector3.forward * lineDistance);
+                                }
+
+                                line.SetPositions(linePositions);
+
+
+                            }
+                            else
+                            {
+
+                                if (line != null && line.enabled)
+                                    line.enabled = false;
+
+                            }
+
+                        }
+
+                        //*** end custom Ray logic 
                     }
+
 
                     Quaternion newRotation;
                     if (sourceState.sourcePose.TryGetRotation(out newRotation, InteractionSourceNode.Grip) && ValidRotation(newRotation))
                     {
                         currentController.ControllerParent.transform.localRotation = newRotation;
                     }
+
+                    //DebugInteractionSourceState source;
+
+                    //source = (DebugInteractionSourceState) sourceState;
+
+                    /*Ray newRay;
+                    if (sourceState.SourcePose.TryGetPointerRay(out newRay))
+                    {
+                        if (ShowPointingRay && Physics.Raycast(newRay))
+                        {
+                            Debug.Log ("!!!!!!!!DRAWING RAY!!!!!!!!!!");
+                            // TODO shanama: get pretty ray here, maybe an "active" ray and an "inactive" ray for when buttons are pressed
+                            Debug.DrawRay(newRay.origin, newRay.direction, Color.cyan);
+                            DrawLine (newRay.origin, newRay.direction, Color.white);
+                        }
+                    }*/
                 }
             }
 #endif

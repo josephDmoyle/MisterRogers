@@ -3,7 +3,8 @@
 
 Shader "Diffuse" {
 Properties {
-	_Color ("Main Color", Color) = (1,1,1,1)
+	_Color ("start Color", Color) = (1,1,1,1)
+	_Color2("end Color", Color) = (1,1,1,1)
 	_MainTex ("Base (RGB)", 2D) = "white" {}
 }
 SubShader {
@@ -15,13 +16,16 @@ CGPROGRAM
 
 sampler2D _MainTex;
 fixed4 _Color;
+fixed4 _Color2;
 
 struct Input {
 	float2 uv_MainTex;
+	float4 screenPos
 };
 
 void surf (Input IN, inout SurfaceOutput o) {
-	fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
+	float2 screenUV = IN.screenPos.xy / IN.screenPos.w;
+	fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * lerp(_Color, _Color2, screeUV.y);
 	o.Albedo = c.rgb;
 	o.Alpha = c.a;
 }
