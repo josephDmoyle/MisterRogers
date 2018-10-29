@@ -7,9 +7,11 @@ public class AI_Person : MonoBehaviour {
     [SerializeField] float speed;
     float x, z;
     Rigidbody body;
+    Animator animator;
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         Invoke("Decide", 1);
     }
     void Start () {
@@ -19,8 +21,15 @@ public class AI_Person : MonoBehaviour {
 	void FixedUpdate () {
         if (!grasped)
         {
+            body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             body.velocity = speed * new Vector3(x, body.velocity.y, z);
         }
+        else
+        {
+            body.constraints = RigidbodyConstraints.None;
+            transform.Rotate(0f, transform.rotation.y, 0f);
+        }
+        animator.SetBool("grasped", grasped);
     }
 
     void Decide()
