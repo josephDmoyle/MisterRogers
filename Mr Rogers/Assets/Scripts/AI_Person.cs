@@ -27,13 +27,15 @@ public class AI_Person : MonoBehaviour {
         }
     }
 
-    private bool _pointed = false;
-    private bool _grasped = false;
-    [SerializeField] float speed;
-    float x = 0f, z = 0f, timer = 0f;
-    Rigidbody body;
-    Animator animator;
-    private void Awake()
+    protected bool _pointed = false;
+    protected bool _grasped = false;
+    [SerializeField] protected float speed;
+    protected float x = 0f, z = 0f, timer = 0f;
+    protected Rigidbody body;
+    protected Animator animator;
+    protected GameObject target;
+
+    protected void Awake()
     {
         body = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
@@ -53,23 +55,20 @@ public class AI_Person : MonoBehaviour {
         {
             body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             body.velocity = speed * new Vector3(x, body.velocity.y, z);
+            transform.Rotate(Vector3.zero);
+            animator.SetBool("walk", (x != 0f) && (z != 0f));
         }
         else
         {
             body.constraints = RigidbodyConstraints.None;
-            transform.Rotate(0f, transform.rotation.y, 0f);
         }
         animator.SetBool("grasped", grasped);
-        animator.SetBool("walk", (x != 0f) && (z != 0f));
     }
 
-    void Decide()
+    protected void Decide()
     {
-        if (!grasped)
-        {
-            Debug.Log("Decide");
-            x = Random.Range(-1f, 1f);
-            z = Random.Range(-1f, 1f);
-        }
+        Debug.Log("Decide");
+        x = Random.Range(-1f, 1f);
+        z = Random.Range(-1f, 1f);
     }
 }

@@ -343,6 +343,59 @@ MonoBehaviour:
   Axis0Destination: 2
   Axis1Destination: 0
   Axis2Destination: 6
+--- !u!1 &146273115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1191506810858362, guid: 1544b2dd53e6792439bb66f31783e901,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 146273116}
+  - component: {fileID: 146273118}
+  - component: {fileID: 146273117}
+  m_Layer: 10
+  m_Name: Awareness
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &146273116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4814951038465752, guid: 1544b2dd53e6792439bb66f31783e901,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146273115}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 268989335}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &146273117
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 135003205483618158, guid: 1544b2dd53e6792439bb66f31783e901,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146273115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 80
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &146273118
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 33560973333518046, guid: 1544b2dd53e6792439bb66f31783e901,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146273115}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &153001345
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,11 +672,11 @@ GameObject:
   - component: {fileID: 268989335}
   - component: {fileID: 268989334}
   - component: {fileID: 268989333}
-  - component: {fileID: 268989337}
   - component: {fileID: 268989336}
   - component: {fileID: 268989338}
   - component: {fileID: 268989340}
   - component: {fileID: 268989339}
+  - component: {fileID: 268989337}
   m_Layer: 10
   m_Name: Red
   m_TagString: Untagged
@@ -704,7 +757,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.462, y: -1.658, z: 2.544}
   m_LocalScale: {x: 0.11633637, y: 0.11633637, z: 0.11633637}
-  m_Children: []
+  m_Children:
+  - {fileID: 146273116}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -731,7 +785,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 268989332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5068d24aae36de94e84f6b3f9a2fda55, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ecb98096475d904cb8eb6fbae1e8c89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
