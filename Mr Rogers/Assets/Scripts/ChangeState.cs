@@ -8,7 +8,7 @@ public class ChangeState : MonoBehaviour {
 
     [SerializeField]
     private BaseGrabbable _grabbable;
-    private AI_Person _ai;
+    private AI _ai;
 
     private void Awake()
     {
@@ -18,7 +18,7 @@ public class ChangeState : MonoBehaviour {
         }
         if(_ai == null)
         {
-            _ai = GetComponent<AI_Person>();
+            _ai = GetComponent<AI>();
         }
 
         _grabbable.OnContactStateChange += ChangeAnimationState;
@@ -48,15 +48,15 @@ public class ChangeState : MonoBehaviour {
         switch (baseGrab.GrabState)
         {
             case GrabStateEnum.Inactive:
-                _ai.grasped = false;
+                _ai.grabbed = false;
                 break;
 
             case GrabStateEnum.Multi:
-                _ai.grasped = true;
+                _ai.grabbed = true;
                 break;
 
             case GrabStateEnum.Single:
-                _ai.grasped = true;
+                _ai.grabbed = true;
                 break;
 
             default:

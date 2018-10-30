@@ -41,7 +41,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
             get { return boundingBoxPrefab; }
         }
 
-        private AI_Person _ai;
+        private AI _ai;
         [SerializeField]
         [Tooltip("What manipulation will two hands perform?")]
         private ManipulationMode manipulationMode = ManipulationMode.Scale;
@@ -146,7 +146,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
         {
             if(_ai == null)
             {
-                _ai = GetComponent<AI_Person>();
+                _ai = GetComponent<AI>();
             }
 
             if (hostTransform == null)
@@ -199,7 +199,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
         /// </summary>
         public void OnInputDown(InputEventData eventData)
         {
-            _ai.grasped = true;
+            _ai.grabbed = true;
             // Add to hand map
             handsPressedLocationsMap[eventData.SourceId] = GetInputPosition(eventData);
             handsPressedInputSourceMap[eventData.SourceId] = eventData.InputSource;
@@ -425,7 +425,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
         private void OnManipulationEnded()
         {
             InputManager.Instance.PopModalInputHandler();
-            _ai.grasped = false;
+            _ai.grabbed = false;
             
             // Hide Bounding Box visual on release
             ShowBoundingBox = false;

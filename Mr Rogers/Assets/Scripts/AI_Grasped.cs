@@ -7,7 +7,7 @@ public class AI_Grasped : BaseGrabbable
 {
 
     private Rigidbody _rigidbody;
-    private AI_Person _ai; 
+    private AI _ai; 
     [SerializeField]
     private bool matchPosition = true;
     [SerializeField]
@@ -17,7 +17,7 @@ public class AI_Grasped : BaseGrabbable
     {
         base.Start();
         _rigidbody = GetComponent<Rigidbody>();
-        _ai = GetComponent<AI_Person>();
+        _ai = GetComponent<AI>();
     }
 
 
@@ -34,7 +34,7 @@ public class AI_Grasped : BaseGrabbable
         if(_ai)
         {
             _ai.pointed = false;
-            _ai.grasped = true;
+            _ai.grabbed = true;
         }
     }
 
@@ -49,7 +49,7 @@ public class AI_Grasped : BaseGrabbable
         }
         if(_ai)
         {
-            _ai.grasped = false;
+            _ai.grabbed = false;
         }
         base.EndGrab();
     }
