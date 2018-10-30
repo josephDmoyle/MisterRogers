@@ -30,20 +30,25 @@ public class AI_Person : MonoBehaviour {
     private bool _pointed = false;
     private bool _grasped = false;
     [SerializeField] float speed;
-    float x, z;
+    float x = 0f, z = 0f, timer = 0f;
     Rigidbody body;
     Animator animator;
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        Invoke("Decide", 1);
     }
     void Start () {
 		
 	}
 	
 	void FixedUpdate () {
+        timer += Time.fixedDeltaTime;
+        if (timer > 1)
+        {
+            Decide();
+            timer = 0f;
+        }
         if (!grasped)
         {
             body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
@@ -55,11 +60,11 @@ public class AI_Person : MonoBehaviour {
             transform.Rotate(0f, transform.rotation.y, 0f);
         }
         animator.SetBool("grasped", grasped);
+        animator.SetBool("walk", (x != 0f) && (z != 0f));
     }
 
     void Decide()
     {
-        Invoke("Decide", 1);
         if (!grasped)
         {
             Debug.Log("Decide");
