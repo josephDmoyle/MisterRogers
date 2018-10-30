@@ -2,18 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AI_Wolf: MonoBehaviour {
+public class AI_Wolf: AI_Person {
 
-    [SerializeField] float speed;
-    float x = 0f, z = 0f, timer = 0f;
-    Rigidbody body;
-    Animator animator;
-    GameObject target;
-    private void Awake()
-    {
-        body = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
-    }
     void Start () {
 		
 	}
@@ -35,13 +25,6 @@ public class AI_Wolf: MonoBehaviour {
             body.velocity = speed * new Vector3(look.x, body.velocity.y, look.z);
         }
         animator.SetBool("walk", (x != 0f) && (z != 0f));
-    }
-
-    void Decide()
-    {
-        Debug.Log("Decide");
-        x = Random.Range(-1f, 1f);
-        z = Random.Range(-1f, 1f);
     }
 
     private void OnTriggerEnter(Collider other)
