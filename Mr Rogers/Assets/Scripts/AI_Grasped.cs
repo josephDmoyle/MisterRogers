@@ -56,15 +56,7 @@ public class AI_Grasped : BaseGrabbable
 
     protected override void OnGrabStay()
     {
-        if (matchPosition)
-        {
-            transform.position = GrabberPrimary.GrabHandle.position;
-        }
-
-        if (matchRotation)
-        {
-            transform.rotation = GrabberPrimary.GrabHandle.rotation;
-        }
+        transform.position = Vector3.Lerp(transform.position, GrabberPrimary.GrabHandle.position, Time.time / (5 * 1000));
     }
 
     // The next two functions provide basic behaviour. Extend from this base script in order to provide more specific functionality.
