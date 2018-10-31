@@ -1,46 +1,15 @@
 fileFormatVersion: 2
-guid: 6c47d0787a7934d41ae099f838c1f509
+guid: 12a8309b82e806940b81e203b849053b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: tree1_GRP_MASH1_ReproMesh
-    100004: tree1_GRP_treetrunk1_GEO3
-    100006: treetrunk1_GEO1_tree1_GRP
     400000: //RootNode
-    400002: tree1_GRP_MASH1_ReproMesh
-    400004: tree1_GRP_treetrunk1_GEO3
-    400006: treetrunk1_GEO1_tree1_GRP
-    2100000: tree1_GRP_MASH1_ReproMeshMat
-    2100002: tree1_GRP_treetrunk1_GEO3Mat
-    2100004: treetrunk1_GEO1_tree1_GRPMat
-    2100006: phong6SG
-    2100008: phong5SG
-    2300000: tree1_GRP_MASH1_ReproMesh
-    2300002: tree1_GRP_treetrunk1_GEO3
-    2300004: treetrunk1_GEO1_tree1_GRP
-    3300000: tree1_GRP_MASH1_ReproMesh
-    3300002: tree1_GRP_treetrunk1_GEO3
-    3300004: treetrunk1_GEO1_tree1_GRP
-    4300000: tree1_GRP_MASH1_ReproMesh
-    4300002: tree1_GRP_treetrunk1_GEO3
-    4300004: treetrunk1_GEO1_tree1_GRP
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: tree1_GRP_MASH1_ReproMeshMat
-    second: {fileID: 2100000, guid: 6c47d0787a7934d41ae099f838c1f509, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: tree1_GRP_treetrunk1_GEO3Mat
-    second: {fileID: 2100002, guid: 6c47d0787a7934d41ae099f838c1f509, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: treetrunk1_GEO1_tree1_GRPMat
-    second: {fileID: 2100004, guid: 6c47d0787a7934d41ae099f838c1f509, type: 3}
+    2100000: MAT_crops
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlane48
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -71,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -112,7 +81,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

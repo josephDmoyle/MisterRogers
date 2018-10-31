@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 95f4fc709c700da4d8cc5de7cefa60d9
+guid: c68c7f3310288d04ab76aecb27873c6a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: MAT_cottageWall
-    2100002: MAT_strawRoof
-    2100004: MAT_woodPlanks
+    2100000: MAT_woodPlanks
     2300000: //RootNode
     3300000: //RootNode
-    4300000: cottage1_GEO
+    4300000: table_GEO
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -42,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.25
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
