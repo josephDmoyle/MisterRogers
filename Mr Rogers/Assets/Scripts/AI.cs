@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class AI : MonoBehaviour {
 
-    const int WANDER = 0, POINTED = 1, GRABBED = 2, TARGET = 3;
+    const int WANDER = 0, GRABBED = 1, TARGET = 2;
 
-
-    public bool pointed = false;
     public bool grabbed = false;
 
     [SerializeField] protected float speed;
@@ -15,7 +13,7 @@ public class AI : MonoBehaviour {
     protected Vector3 move = Vector3.zero;
 
     protected Rigidbody body;
-    protected Animator animator;
+    public Animator animator;
     protected GameObject target;
 
     protected int state = WANDER;
@@ -23,7 +21,8 @@ public class AI : MonoBehaviour {
     protected void Awake()
     {
         body = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        GameObject _red = GameObject.Find("Red");
+        animator = _red.GetComponent<Animator>();
     }
 	
 	void FixedUpdate () {
@@ -32,11 +31,8 @@ public class AI : MonoBehaviour {
             case WANDER:
                 Wander();
                 break;
-            case POINTED:
-                Pointed();
-                break;
             case GRABBED:
-                //body.constraints = RigidbodyConstraints.None;
+                Grabbed();
                 break;
             case TARGET:
                 Target();
@@ -48,14 +44,13 @@ public class AI : MonoBehaviour {
         animator.SetBool("walk", (move.x != 0f) && (move.z != 0f));
     }
 
+
     private int Decide()
     {
         if (grabbed)
             return GRABBED;
         if (target != null)
             return TARGET;
-        if (pointed)
-            return POINTED;
         return WANDER;
     }
 
@@ -84,13 +79,11 @@ public class AI : MonoBehaviour {
         body.velocity = move;
     }
 
-    protected virtual void Pointed()
+    protected virtual void Grabbed()
     {
-        body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        move = Vector3.up * body.velocity.y;
-        body.velocity = move;
+        move.x = 0f;
+        move.z = 0f;
     }
-
     protected virtual void Target()
     {
         body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;

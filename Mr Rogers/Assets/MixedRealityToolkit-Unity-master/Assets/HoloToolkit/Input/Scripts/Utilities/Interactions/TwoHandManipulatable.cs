@@ -409,6 +409,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
 
         private void OnOneHandMoveStarted()
         {
+            _ai.grabbed = false;
             Assert.IsTrue(handsPressedLocationsMap.Count == 1);
 
             moveLogic.Setup(handsPressedLocationsMap.Values.First(), hostTransform);
@@ -416,6 +417,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
 
         private void OnManipulationStarted()
         {
+            _ai.grabbed = false;
             InputManager.Instance.PushModalInputHandler(gameObject);
 
             // Show Bounding Box visual on manipulation interaction

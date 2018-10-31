@@ -65,13 +65,14 @@ namespace HoloToolkit.Unity.InputModule
         private uint currentInputSourceId;
         private Rigidbody hostRigidbody;
         private bool hostRigidbodyWasKinematic;
-
+        private AI _ai;
         private void Start()
         {
             if (HostTransform == null)
             {
                 HostTransform = transform;
             }
+            _ai = GetComponent<AI>();
 
             hostRigidbody = HostTransform.GetComponent<Rigidbody>();
         }
@@ -102,6 +103,8 @@ namespace HoloToolkit.Unity.InputModule
         /// </summary>
         public void StartDragging(Vector3 initialDraggingPosition)
         {
+
+            _ai.grabbed = true;
             if (!IsDraggingEnabled)
             {
                 return;
@@ -204,6 +207,8 @@ namespace HoloToolkit.Unity.InputModule
         /// </summary>
         private void UpdateDragging()
         {
+
+            _ai.grabbed = true;
             Transform cameraTransform = CameraCache.Main.transform;
 
             Vector3 inputPosition = Vector3.zero;
@@ -288,6 +293,8 @@ namespace HoloToolkit.Unity.InputModule
         /// </summary>
         public void StopDragging()
         {
+
+            
             if (!isDragging)
             {
                 return;
@@ -341,16 +348,19 @@ namespace HoloToolkit.Unity.InputModule
             if (currentInputSource != null &&
                 eventData.SourceId == currentInputSourceId)
             {
+                _ai.grabbed = false;
                 eventData.Use(); // Mark the event as used, so it doesn't fall through to other handlers.
-
                 StopDragging();
             }
         }
 
         public void OnInputDown(InputEventData eventData)
         {
+            
+
             if (isDragging)
             {
+                _ai.grabbed = true;
                 // We're already handling drag input, so we can't start a new drag operation.
                 return;
             }

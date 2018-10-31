@@ -33,7 +33,6 @@ public class AI_Grasped : BaseGrabbable
         }
         if(_ai)
         {
-            _ai.pointed = false;
             _ai.grabbed = true;
         }
     }

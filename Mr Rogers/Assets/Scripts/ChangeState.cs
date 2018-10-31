@@ -27,23 +27,6 @@ public class ChangeState : MonoBehaviour {
     
     private void ChangeAnimationState(BaseGrabbable baseGrab)
     {
-        switch (baseGrab.ContactState)
-        {
-            case GrabStateEnum.Inactive:
-                _ai.pointed = false;
-                break;
-
-            case GrabStateEnum.Multi:
-                _ai.pointed = true;
-                break;
-
-            case GrabStateEnum.Single:
-                _ai.pointed = true;
-                break;
-
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
 
         switch (baseGrab.GrabState)
         {
