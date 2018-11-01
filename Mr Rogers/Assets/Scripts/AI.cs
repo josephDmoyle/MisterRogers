@@ -14,6 +14,7 @@ public class AI : MonoBehaviour {
 
     protected Rigidbody body;
     protected Animator animator;
+    protected Collider colider;
     [SerializeField]protected GameObject target;
 
     protected int state = WANDER;
@@ -22,6 +23,7 @@ public class AI : MonoBehaviour {
     {
         body = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
+        colider = GetComponent<Collider>();
     }
 
     protected virtual void Start()

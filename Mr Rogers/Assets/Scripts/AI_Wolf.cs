@@ -41,15 +41,11 @@ public class AI_Wolf : AI {
         move.y = body.velocity.y;
         body.velocity = move;
         animator.SetBool("left", target.transform.position.x < transform.position.x);
-        if ((Vector3.Distance(target.transform.position, transform.position) < 1) && (timer == 2f))
-        {
-            animator.SetTrigger("fire");
-            timer = 0f;
-        }
     }
 
-    public override void Attack()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject == target)
+            Destroy(collision.gameObject);
     }
 }

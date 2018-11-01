@@ -337,28 +337,6 @@ MonoBehaviour:
   Axis0Destination: 0
   Axis1Destination: 4
   Axis2Destination: 6
---- !u!1 &53122323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1525990524806892, guid: 530c948c1fa965f40b9c978635b8ffc2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546126340}
---- !u!114 &53122324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 53122323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HostTransform: {fileID: 0}
-  DistanceScale: 2
-  RotationMode: 0
-  PositionLerpSpeed: 0.2
-  RotationLerpSpeed: 0.2
-  IsDraggingEnabled: 1
 --- !u!1001 &56815423
 Prefab:
   m_ObjectHideFlags: 0
@@ -6205,8 +6183,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114545416354422036, guid: 530c948c1fa965f40b9c978635b8ffc2, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 530c948c1fa965f40b9c978635b8ffc2, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1557924582 stripped

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AI_Hero : AI {
 
+    GameObject arrow;
+
     protected override void Start()
     {
         Index.index.HeroNew(this);
@@ -34,6 +36,11 @@ public class AI_Hero : AI {
 
     public override void Attack()
     {
-        
+        if (target)
+        {
+            Vector3 bow = (target.transform.position - transform.position);
+            GameObject fly = Instantiate(arrow);
+            arrow.transform.LookAt(target.transform.position);
+        }
     }
 }
