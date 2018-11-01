@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class AI_Hero : AI {
 
-    GameObject arrow;
+    [SerializeField]GameObject arrow;
+    [SerializeField] Transform crosshair;
+    [SerializeField] float range;
 
     protected override void Start()
     {
@@ -20,7 +22,7 @@ public class AI_Hero : AI {
     {
         if (Index.index.wolves.Count > 0)
         {
-            float min = float.MaxValue;
+            float min = range;
             foreach (AI wolf in Index.index.wolves)
             {
                 if (Vector3.Distance(transform.position, wolf.transform.position) < min)
@@ -38,9 +40,12 @@ public class AI_Hero : AI {
     {
         if (target)
         {
-            Vector3 bow = (target.transform.position - transform.position);
-            GameObject fly = Instantiate(arrow);
-            arrow.transform.LookAt(target.transform.position);
+            Vector3 bow = (target.transform.position - crosshair.position);
+            bow.y = crosshair.position.y;
+            bow.Normalize();
+            GameObject fly = Instantiate(arrow, crosshair.position + bow, Quaternion.identity);
+            fly.transform.right = bow;
+            fly.GetComponent<Rigidbody>().velocity = bow * 8;
         }
     }
 }

@@ -45,6 +45,11 @@ public class AI_Wolf : AI {
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.GetComponent<Arrow>())
+        {
+            Destroy(collision.collider.gameObject);
+            Destroy(gameObject);
+        }
         if (collision.gameObject == target)
             Destroy(collision.gameObject);
     }

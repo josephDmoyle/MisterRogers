@@ -14,7 +14,6 @@ public class AI : MonoBehaviour {
 
     protected Rigidbody body;
     protected Animator animator;
-    protected Collider colider;
     [SerializeField]protected GameObject target;
 
     protected int state = WANDER;
@@ -23,7 +22,6 @@ public class AI : MonoBehaviour {
     {
         body = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
-        colider = GetComponent<Collider>();
     }
 
     protected virtual void Start()
@@ -103,6 +101,7 @@ public class AI : MonoBehaviour {
         move.y = body.velocity.y;
         body.velocity = move;
         animator.SetBool("left", target.transform.position.x < transform.position.x);
+        timer += Time.fixedDeltaTime;
         if (timer > 2f)
         {
             animator.SetTrigger("fire");
