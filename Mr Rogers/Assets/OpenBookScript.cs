@@ -8,15 +8,15 @@ public class OpenBookScript : MonoBehaviour {
 
     private float RightTrigger;
     private float LeftTrigger;
-    private float strttime;
 
-    float flag = 0;
+   private float anim_time = 4.128f;
+    private float at_anim;
     private Animator anim;
     private bool open = true;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
-        strttime = Time.time;
+
     }
 	
 	// Update is called once per frame
@@ -26,21 +26,17 @@ public class OpenBookScript : MonoBehaviour {
         
         if(open && (RightTrigger == 1 || LeftTrigger == 1))
         {
+            at_anim = Time.time + anim_time;
             anim.SetTrigger("Open");
             open = false;
         }
 
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("BookOPen"))
+        if (!open && Time.time > at_anim)
         {
-            flag += (Time.time - strttime) * 2f;
-            
+            SceneManager.LoadScene("LevelTest");
         }
 
-        if (flag>4000)
-        {
-            SceneManager.LoadScene("LevelTest"); 
-            Debug.Log("STOPPPEd");
-        }
+      
     }
 }
