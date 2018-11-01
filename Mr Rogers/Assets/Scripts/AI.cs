@@ -14,7 +14,7 @@ public class AI : MonoBehaviour {
 
     protected Rigidbody body;
     protected Animator animator;
-    protected GameObject target;
+    [SerializeField]protected GameObject target;
 
     protected int state = WANDER;
 
@@ -23,8 +23,18 @@ public class AI : MonoBehaviour {
         body = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
     }
-	
-	void FixedUpdate () {
+
+    protected virtual void Start()
+    {
+        Index.index.VillagerNew(this);
+    }
+
+    protected virtual void OnDestroy()
+    {
+        Index.index.VillagerDie(this);
+    }
+
+    void FixedUpdate () {
         state = Decide();
         switch (state) {
             case WANDER:
@@ -46,6 +56,7 @@ public class AI : MonoBehaviour {
 
     private int Decide()
     {
+        Scan();
         if (grabbed)
             return GRABBED;
         if (target != null)
@@ -90,11 +101,17 @@ public class AI : MonoBehaviour {
         move.y = body.velocity.y;
         body.velocity = move;
         animator.SetBool("left", target.transform.position.x < transform.position.x);
-        if (timer > 1f)
+        timer += Time.fixedDeltaTime;
+        if (timer > 2f)
         {
             animator.SetTrigger("fire");
             timer = 0f;
         }
+    }
+
+    protected virtual void Scan()
+    {
+
     }
 
     public virtual void Attack()

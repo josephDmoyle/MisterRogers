@@ -16,6 +16,37 @@ TextureImporter:
     21300022: Red_idleSheet_11
     21300024: Red_idleSheet_12
     21300026: Red_idleSheet_13
+    21300028: red_idle_0
+    21300030: red_idle_1
+    21300032: red_idle_2
+    21300034: red_idle_3
+    21300036: red_idle_4
+    21300038: red_idle_5
+    21300040: red_idle_6
+    21300042: red_idle_7
+    21300044: red_idle_8
+    21300046: red_idle_9
+    21300048: red_idle_10
+    21300050: red_idle_11
+    21300052: red_idle_12
+    21300054: red_idle_13
+    21300056: red_idle_14
+    21300058: red_idle_15
+    21300060: red_idle_16
+    21300062: red_idle_17
+    21300064: red_idle_18
+    21300066: red_idle_19
+    21300068: red_idle_20
+    21300070: red_idle_21
+    21300072: red_idle_22
+    21300074: red_idle_23
+    21300076: red_idle_24
+    21300078: red_idle_25
+    21300080: red_idle_26
+    21300082: red_idle_27
+    21300084: red_idle_28
+    21300086: red_idle_29
+    21300088: red_idle_30
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -142,7 +173,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Red_idleSheet_0
+      name: red_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -156,13 +187,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9169a098b6a13428059af145cf6301
+      spriteID: 8b36892580da51742a397b50fcfdf415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_1
+      name: red_idle_1
       rect:
         serializedVersion: 2
         x: 512
@@ -176,13 +207,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2151799984a11cf44aaa69d922e26eaf
+      spriteID: 2a86b9c0e7d191c4795b233d70b43fc0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_2
+      name: red_idle_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -196,13 +227,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ca092a598d0eca4eb5cdb9ff045934b
+      spriteID: cb8cfa097130d5a40ae6d66d43ad4e78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_3
+      name: red_idle_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -216,13 +247,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 111235eaf5224a44196ef6469d53c0eb
+      spriteID: 2e0d16d9dd5c9354ca88df0b6735ee86
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_4
+      name: red_idle_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -236,13 +267,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491313340e5def64ca8365ebc6957533
+      spriteID: 1ef68f444c0eb6d4c991618b2379ebb3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_5
+      name: red_idle_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -256,13 +287,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec75a4b01fc6d4c4bb7969b4276b4c03
+      spriteID: 6c2fe4e3f8899bb4ab47c61f71922270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_6
+      name: red_idle_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -276,13 +307,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47172f90fca4cc44eb9015d49e380c6e
+      spriteID: 9678c89c9ed16004590afea1fa3797d8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_7
+      name: red_idle_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -296,13 +327,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a5add85144df524bbae5597191fb0f3
+      spriteID: 36b5c28b9e6ca314b852205316c05a02
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_8
+      name: red_idle_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -316,13 +347,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b91e87856805d446b717f8be6636d44
+      spriteID: d66268074bfef0046a89469408de8975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_9
+      name: red_idle_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -336,13 +367,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e011acaa2d9c3d40b59db4cd6cad45b
+      spriteID: ade510855d8fac64ba1f105a0dbd12b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_10
+      name: red_idle_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -356,13 +387,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1a97eac0711c054db7883466dbd20d9
+      spriteID: b621d455193ba0e46966825cf36d3418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_11
+      name: red_idle_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -376,13 +407,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d02ecf7fa84a8f64f91d0ceac9e69cbb
+      spriteID: ed742fa2e6d45a940bb8136e9bdbcb12
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_12
+      name: red_idle_12
       rect:
         serializedVersion: 2
         x: 6144
@@ -396,13 +427,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39417df9d68d6c049b6c52a499fc9e7d
+      spriteID: 3b1cf0e812d808543a6fe8d7a018c1fd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_idleSheet_13
+      name: red_idle_13
       rect:
         serializedVersion: 2
         x: 6656
@@ -416,7 +447,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 329336e5f44737f4e8b67dfb7c31f270
+      spriteID: e5931d856bd3ec946acd382602b2d21a
       vertices: []
       indices: 
       edges: []

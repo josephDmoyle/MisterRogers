@@ -16,6 +16,61 @@ TextureImporter:
     21300022: red_walkSheet_11
     21300024: red_walkSheet_12
     21300026: red_walkSheet_13
+    21300028: red_walk_0
+    21300030: red_walk_1
+    21300032: red_walk_2
+    21300034: red_walk_3
+    21300036: red_walk_4
+    21300038: red_walk_5
+    21300040: red_walk_6
+    21300042: red_walk_7
+    21300044: red_walk_8
+    21300046: red_walk_9
+    21300048: red_walk_10
+    21300050: red_walk_11
+    21300052: red_walk_12
+    21300054: red_walk_13
+    21300056: red_walk_14
+    21300058: red_walk_15
+    21300060: red_walk_16
+    21300062: red_walk_17
+    21300064: red_walk_18
+    21300066: red_walk_19
+    21300068: red_walk_20
+    21300070: red_walk_21
+    21300072: red_walk_22
+    21300074: red_walk_23
+    21300076: red_walk_24
+    21300078: red_walk_25
+    21300080: red_walk_26
+    21300082: red_walk_27
+    21300084: red_walk_28
+    21300086: red_walk_29
+    21300088: red_walk_30
+    21300090: red_walk_31
+    21300092: red_walk_32
+    21300094: red_walk_33
+    21300096: red_walk_34
+    21300098: red_walk_35
+    21300100: red_walk_36
+    21300102: red_walk_37
+    21300104: red_walk_38
+    21300106: red_walk_39
+    21300108: red_walk_40
+    21300110: red_walk_41
+    21300112: red_walk_42
+    21300114: red_walk_43
+    21300116: red_walk_44
+    21300118: red_walk_45
+    21300120: red_walk_46
+    21300122: red_walk_47
+    21300124: red_walk_48
+    21300126: red_walk_49
+    21300128: red_walk_50
+    21300130: red_walk_51
+    21300132: red_walk_52
+    21300134: red_walk_53
+    21300136: red_walk_54
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -142,7 +197,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: red_walkSheet_0
+      name: red_walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -156,13 +211,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6440a7b388a4b834f83b8c75b9b13663
+      spriteID: ab8ea251a044b7a449c6c00b5003789d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_1
+      name: red_walk_1
       rect:
         serializedVersion: 2
         x: 512
@@ -176,13 +231,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5353219216ca034283df7555890092a
+      spriteID: 8d64a72182812f24f9c5c4c812bc10ea
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_2
+      name: red_walk_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -196,13 +251,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e51ca6ec7450d54db8da160819a82ea
+      spriteID: 4ff890b555d506249a9cf519e4c3c195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_3
+      name: red_walk_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -216,13 +271,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db9b8dfeeaac2854496dc97167cf65d9
+      spriteID: 7c4b51d8ec0383c45bd5bfe1bc1ec6a0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_4
+      name: red_walk_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -236,13 +291,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d92b2e0d5fff094cb1593b5980cb1d4
+      spriteID: 005bc13ec8900be44be0a0383ce489f9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_5
+      name: red_walk_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -256,13 +311,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846ae295972711140a57a0bdba1fff86
+      spriteID: 2351171030f879646bfe147c0ab3c7c7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_6
+      name: red_walk_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -276,13 +331,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ec3dea76a4fb642b86c0726e8eb6dd
+      spriteID: d09f23f44876f1f40b37cafc1dd70ecf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_7
+      name: red_walk_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -296,13 +351,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e0df43e60a35604b9e86ab6149a552e
+      spriteID: 0b5c0711ddae869458bea7ce7b201587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_8
+      name: red_walk_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -316,13 +371,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44eb3bc0d21b1e40804c599e926881c
+      spriteID: 13ccd8a5710f9294680c11c05ca26b78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_9
+      name: red_walk_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -336,13 +391,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6540f6a961a60ba40a8070b51bd3c844
+      spriteID: 34b52afcb3538d1458b69961c21a7cb0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_10
+      name: red_walk_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -356,13 +411,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10bd137cc5f22e844a316c0cc2e7c8dd
+      spriteID: 80696d17b833f2c4c8ebfc430f488900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_11
+      name: red_walk_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -376,13 +431,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b21c87f4942d5448b345391810d401
+      spriteID: 5bc21f7c8b65c984e93b4805596c0848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_12
+      name: red_walk_12
       rect:
         serializedVersion: 2
         x: 6144
@@ -396,13 +451,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3c4d825ce07a67489e937e75ed12f14
+      spriteID: 0487718f924c61742a00ea1f90c3449f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_walkSheet_13
+      name: red_walk_13
       rect:
         serializedVersion: 2
         x: 6656
@@ -416,7 +471,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafd00d06ce25ae4d8c3d6653dadfadc
+      spriteID: 885fc3492d0b02640941cf0bfe749799
       vertices: []
       indices: 
       edges: []

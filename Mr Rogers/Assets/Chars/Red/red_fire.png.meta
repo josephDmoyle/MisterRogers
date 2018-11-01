@@ -14,6 +14,62 @@ TextureImporter:
     21300018: red_bow_9
     21300020: red_bow_10
     21300022: red_bow_11
+    21300024: red_fire_0
+    21300026: red_fire_1
+    21300028: red_fire_2
+    21300030: red_fire_3
+    21300032: red_fire_4
+    21300034: red_fire_5
+    21300036: red_fire_6
+    21300038: red_fire_7
+    21300040: red_fire_8
+    21300042: red_fire_9
+    21300044: red_fire_10
+    21300046: red_fire_11
+    21300048: red_fire_12
+    21300050: red_fire_13
+    21300052: red_fire_14
+    21300054: red_fire_15
+    21300056: red_fire_16
+    21300058: red_fire_17
+    21300060: red_fire_18
+    21300062: red_fire_19
+    21300064: red_fire_20
+    21300066: red_fire_21
+    21300068: red_fire_22
+    21300070: red_fire_23
+    21300072: red_fire_24
+    21300074: red_fire_25
+    21300076: red_fire_26
+    21300078: red_fire_27
+    21300080: red_fire_28
+    21300082: red_fire_29
+    21300084: red_fire_30
+    21300086: red_fire_31
+    21300088: red_fire_32
+    21300090: red_fire_33
+    21300092: red_fire_34
+    21300094: red_fire_35
+    21300096: red_fire_36
+    21300098: red_fire_37
+    21300100: red_fire_38
+    21300102: red_fire_39
+    21300104: red_fire_40
+    21300106: red_fire_41
+    21300108: red_fire_42
+    21300110: red_fire_43
+    21300112: red_fire_44
+    21300114: red_fire_45
+    21300116: red_fire_46
+    21300118: red_fire_47
+    21300120: red_fire_48
+    21300122: red_fire_49
+    21300124: red_fire_50
+    21300126: red_fire_51
+    21300128: red_fire_52
+    21300130: red_fire_53
+    21300132: red_fire_54
+    21300134: red_fire_55
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -140,7 +196,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: red_bow_0
+      name: red_fire_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,13 +210,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49c8a9899e1a2af48a1b48566259ac24
+      spriteID: fc61815817063c94e8e022945890fe51
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_1
+      name: red_fire_1
       rect:
         serializedVersion: 2
         x: 512
@@ -174,13 +230,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b90de6363479b7e47bd5197012d16d4a
+      spriteID: 1d2ccc622d5cb3d49a8624e8b1fc4852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_2
+      name: red_fire_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -194,13 +250,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f97dbd419249cb64bbb965a199b5fafd
+      spriteID: 08e78e3ab44e53743aee446dfd0bcc57
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_3
+      name: red_fire_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -214,13 +270,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cc30ea0246d3ba45b422f1eb2dd5800
+      spriteID: e37c930d924695845bcba9f24221b478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_4
+      name: red_fire_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -234,13 +290,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a41430321689444bd2e2f8cbc90985
+      spriteID: 9e660df8ff12fd44e989a470f62a53f1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_5
+      name: red_fire_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -254,13 +310,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb4cf62b5eb23b043b537ca4a374ca33
+      spriteID: bd1dec6a47e79694d83acaea8fedc0f7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_6
+      name: red_fire_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -274,13 +330,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44c702547906fc74ab06a90be8071fdc
+      spriteID: 841f4a1371a8de84db30829a76e9de79
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_7
+      name: red_fire_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -294,13 +350,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d80336c5a48661a42bbcf2776096042b
+      spriteID: f436eb31e77069f428fb9bb0514eeef3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_8
+      name: red_fire_8
       rect:
         serializedVersion: 2
         x: 4096
@@ -314,13 +370,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 703667e6e6aa03449a3291eb226d9352
+      spriteID: afd24c25b4b9b1d4795a5b7a2af0801a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_9
+      name: red_fire_9
       rect:
         serializedVersion: 2
         x: 4608
@@ -334,13 +390,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abb0d598d48bcc479f6def70839f4ee
+      spriteID: 90bbb8f724a225c44a3819ae76b19e5d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_10
+      name: red_fire_10
       rect:
         serializedVersion: 2
         x: 5120
@@ -354,13 +410,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9d6327fbc8b5b4c9f0360480f92a21
+      spriteID: 21e67d73a750b2a4181b3917bc19a25d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_bow_11
+      name: red_fire_11
       rect:
         serializedVersion: 2
         x: 5632
@@ -374,7 +430,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2abdfe965be1b174aa46772db01f8b3c
+      spriteID: 1cf634c929b199e4185ad0da2daf9f79
       vertices: []
       indices: 
       edges: []
