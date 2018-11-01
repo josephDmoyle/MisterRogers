@@ -6,6 +6,7 @@ public class AI : MonoBehaviour {
 
     const int WANDER = 0, GRABBED = 1, TARGET = 2;
 
+    [SerializeField] protected bool shouldWander;
     public bool grabbed = false;
 
     [SerializeField] protected float speed;
@@ -38,7 +39,8 @@ public class AI : MonoBehaviour {
         state = Decide();
         switch (state) {
             case WANDER:
-                Wander();
+                if(shouldWander)
+                    Wander();
                 break;
             case GRABBED:
                 Grabbed();

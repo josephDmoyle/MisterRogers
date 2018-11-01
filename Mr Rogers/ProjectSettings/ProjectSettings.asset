@@ -595,7 +595,7 @@ PlayerSettings:
     27: UNITY_POST_PROCESSING_STACK_V2
   platformArchitecture: {}
   scriptingBackend:
-    Metro: 2
+    Metro: 1
   il2cppCompilerConfiguration: {}
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
@@ -603,6 +603,7 @@ PlayerSettings:
   scriptingRuntimeVersion: 0
   apiCompatibilityLevelPerPlatform:
     Metro: 2
+    Standalone: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Template_3D
