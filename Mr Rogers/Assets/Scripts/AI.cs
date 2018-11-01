@@ -21,7 +21,7 @@ public class AI : MonoBehaviour {
     protected void Awake()
     {
         body = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 	
 	void FixedUpdate () {
@@ -55,7 +55,6 @@ public class AI : MonoBehaviour {
 
     protected virtual void Wander()
     {
-        body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         timer += Time.fixedDeltaTime;
         if (timer > 2f)
         {
@@ -87,7 +86,6 @@ public class AI : MonoBehaviour {
     }
     protected virtual void Target()
     {
-        body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         move = Vector3.up * body.velocity.y;
         body.velocity = move;
         animator.SetBool("left", target.transform.position.x < transform.position.x);
