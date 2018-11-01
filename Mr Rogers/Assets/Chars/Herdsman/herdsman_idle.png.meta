@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 834afbcbb1d816a4e97efd8280d68eff
+guid: 64bf442c45d8aeb4d965a83fdf1c21ed
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sheep_walk_0
-    21300002: sheep_walk_1
-    21300004: sheep_walk_2
-    21300006: sheep_walk_3
-    21300008: sheep_walk_4
-    21300010: sheep_walk_5
-    21300012: sheep_walk_6
-    21300014: sheep_walk_7
-    21300016: sheep_walk_8
-    21300018: sheep_walk_9
-    21300020: sheep_walk_10
-    21300022: sheep_walk_11
-    21300024: sheep_walk_12
+    21300000: herder_idle_0
+    21300002: herder_idle_1
+    21300004: herder_idle_2
+    21300006: herder_idle_3
+    21300008: herder_idle_4
+    21300010: herder_idle_5
+    21300012: herder_idle_6
+    21300014: herder_idle_7
+    21300016: herder_idle_8
+    21300018: herder_idle_9
+    21300020: herder_idle_10
+    21300022: herder_idle_11
+    21300024: herder_idle_12
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -106,14 +106,14 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Windows Store Apps
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sheep_walk_0
+      name: herder_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,19 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea61fd586d720664b952303707f83c29
+      spriteID: 8d59309b41fe1554690e430a89dd05b6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_1
+      name: herder_idle_1
       rect:
         serializedVersion: 2
-        x: 318
+        x: 512
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,19 +175,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646e1e747508e5947b985ec6bd5dcfff
+      spriteID: 8d10ea6ac1c2d844c8c1b4333caf9768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_2
+      name: herder_idle_2
       rect:
         serializedVersion: 2
-        x: 636
+        x: 1024
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,19 +195,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3beb27558299d94e92d31605ef154e0
+      spriteID: d0d9f00cafa14a34d9d624d9facb0aaa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_3
+      name: herder_idle_3
       rect:
         serializedVersion: 2
-        x: 954
+        x: 1536
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275b660687deaab4bb94ef9456243b9f
+      spriteID: 62540b23ae18df24bb91f87538eb306b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_4
+      name: herder_idle_4
       rect:
         serializedVersion: 2
-        x: 1272
+        x: 2048
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,19 +235,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29470d12ee730f746bca4fc76cc3c31f
+      spriteID: 19fa87956b8387f48bf6d6e7efb26d6c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_5
+      name: herder_idle_5
       rect:
         serializedVersion: 2
-        x: 1590
+        x: 2560
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,19 +255,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd98401667c94e44680ae6220706f8fb
+      spriteID: 3094a4a609a5ebd409c0a7d63cf01053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_6
+      name: herder_idle_6
       rect:
         serializedVersion: 2
-        x: 1908
+        x: 3072
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,19 +275,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adbc5209e68c94249852b1f16ba50e78
+      spriteID: 518518b4dd437294899f49ff755f2613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_7
+      name: herder_idle_7
       rect:
         serializedVersion: 2
-        x: 2226
+        x: 3584
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,19 +295,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9e9945b638e19e49a05bbfef83202da
+      spriteID: ffc3d3fe17ed5fa47840a6b82a8904f6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_8
+      name: herder_idle_8
       rect:
         serializedVersion: 2
-        x: 2544
+        x: 4096
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,19 +315,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a816d53fd7daeb240ba81730b0e4f589
+      spriteID: 2faa6f18ce99d984aa4ba65dbb83c602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_9
+      name: herder_idle_9
       rect:
         serializedVersion: 2
-        x: 2862
+        x: 4608
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,19 +335,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b35450b48afca924ea9f84cbfd7a876a
+      spriteID: 00bf07e729f932e4595708db2fd764f0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_10
+      name: herder_idle_10
       rect:
         serializedVersion: 2
-        x: 3180
+        x: 5120
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,19 +355,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0bd17048cd531a44bb5c95c58daa328
+      spriteID: a09e1eaed86b56847b3fe95545b1380c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_11
+      name: herder_idle_11
       rect:
         serializedVersion: 2
-        x: 3498
+        x: 5632
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,19 +375,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42fa5eed328511c48b691c2c344250ce
+      spriteID: a3792487337ad9343b4eb44dd67f76cd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_12
+      name: herder_idle_12
       rect:
         serializedVersion: 2
-        x: 3816
+        x: 6144
         y: 0
-        width: 318
-        height: 260
+        width: 512
+        height: 580
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,7 +395,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f49a822623c876d42b9a66897a31008d
+      spriteID: 761ee308f858bed4eb9685b7c12927e5
       vertices: []
       indices: 
       edges: []
@@ -403,7 +403,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 16b4b34c09736be4287a2fd87147855c
+    spriteID: a303d3fcf12378e41ad9c85b026efdf8
     vertices: []
     indices: 
     edges: []

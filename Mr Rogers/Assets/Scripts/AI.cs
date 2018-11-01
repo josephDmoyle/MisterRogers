@@ -13,7 +13,7 @@ public class AI : MonoBehaviour {
     protected Vector3 move = Vector3.zero;
 
     protected Rigidbody body;
-    public Animator animator;
+    protected Animator animator;
     protected GameObject target;
 
     protected int state = WANDER;
@@ -21,8 +21,7 @@ public class AI : MonoBehaviour {
     protected void Awake()
     {
         body = GetComponent<Rigidbody>();
-        GameObject _red = GameObject.Find("Red");
-        animator = _red.GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 	
 	void FixedUpdate () {
@@ -56,7 +55,6 @@ public class AI : MonoBehaviour {
 
     protected virtual void Wander()
     {
-        body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         timer += Time.fixedDeltaTime;
         if (timer > 2f)
         {
@@ -65,8 +63,10 @@ public class AI : MonoBehaviour {
                 move.x = Random.Range(-1f, 1f);
                 move.y = 0f;
                 move.z = Random.Range(-1f, 1f);
+                if ((move.x != 0f) || (move.z != 0f))
+                    move.Normalize();
                 move *= speed;
-                if (move.x < 0f)
+                if (move.x <= 0f)
                     animator.SetBool("left", true);
                 else if (move.x > 0f)
                     animator.SetBool("left", false);
@@ -86,8 +86,8 @@ public class AI : MonoBehaviour {
     }
     protected virtual void Target()
     {
-        body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        move = Vector3.up * body.velocity.y;
+        move = Vector3.zero;
+        move.y = body.velocity.y;
         body.velocity = move;
         animator.SetBool("left", target.transform.position.x < transform.position.x);
         if (timer > 1f)

@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 834afbcbb1d816a4e97efd8280d68eff
+guid: 3ff97f64ee677194ab9f72dd948875ab
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sheep_walk_0
-    21300002: sheep_walk_1
-    21300004: sheep_walk_2
-    21300006: sheep_walk_3
-    21300008: sheep_walk_4
-    21300010: sheep_walk_5
-    21300012: sheep_walk_6
-    21300014: sheep_walk_7
-    21300016: sheep_walk_8
-    21300018: sheep_walk_9
-    21300020: sheep_walk_10
-    21300022: sheep_walk_11
-    21300024: sheep_walk_12
+    21300000: axe_dig_0
+    21300002: axe_dig_1
+    21300004: axe_dig_2
+    21300006: axe_dig_3
+    21300008: axe_dig_4
+    21300010: axe_dig_5
+    21300012: axe_dig_6
+    21300014: axe_dig_7
+    21300016: axe_dig_8
+    21300018: axe_dig_9
+    21300020: axe_dig_10
+    21300022: axe_dig_11
+    21300024: axe_dig_12
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sheep_walk_0
+      name: axe_dig_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,19 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea61fd586d720664b952303707f83c29
+      spriteID: 0e63320008b9a0741a69bf1cabfcdcf3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_1
+      name: axe_dig_1
       rect:
         serializedVersion: 2
-        x: 318
+        x: 550
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,19 +175,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646e1e747508e5947b985ec6bd5dcfff
+      spriteID: 752e86b5b5ae60d44af33b43eeef757a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_2
+      name: axe_dig_2
       rect:
         serializedVersion: 2
-        x: 636
+        x: 1100
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,19 +195,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3beb27558299d94e92d31605ef154e0
+      spriteID: d20fd381028b7554e8eaad50e9b97485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_3
+      name: axe_dig_3
       rect:
         serializedVersion: 2
-        x: 954
+        x: 1650
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275b660687deaab4bb94ef9456243b9f
+      spriteID: 55c82c5fa42ba634b9c509c42f85eabd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_4
+      name: axe_dig_4
       rect:
         serializedVersion: 2
-        x: 1272
+        x: 2200
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,19 +235,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29470d12ee730f746bca4fc76cc3c31f
+      spriteID: adbb478171f960543ba6ad8e2651e158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_5
+      name: axe_dig_5
       rect:
         serializedVersion: 2
-        x: 1590
+        x: 2750
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,19 +255,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd98401667c94e44680ae6220706f8fb
+      spriteID: 10b045b19cb5a9a4185b801ba7a2447a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_6
+      name: axe_dig_6
       rect:
         serializedVersion: 2
-        x: 1908
+        x: 3300
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,19 +275,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adbc5209e68c94249852b1f16ba50e78
+      spriteID: 68f9a0d1d2f09be49975ebe1d7466f7f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_7
+      name: axe_dig_7
       rect:
         serializedVersion: 2
-        x: 2226
+        x: 3850
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,19 +295,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9e9945b638e19e49a05bbfef83202da
+      spriteID: 22acd7fbc1446b4499156344ff55cd24
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_8
+      name: axe_dig_8
       rect:
         serializedVersion: 2
-        x: 2544
+        x: 4400
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,19 +315,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a816d53fd7daeb240ba81730b0e4f589
+      spriteID: 36c46970dcd1cd440b38d90146d0622e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_9
+      name: axe_dig_9
       rect:
         serializedVersion: 2
-        x: 2862
+        x: 4950
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,19 +335,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b35450b48afca924ea9f84cbfd7a876a
+      spriteID: bb646fbbeed6b144d86693991967fd92
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_10
+      name: axe_dig_10
       rect:
         serializedVersion: 2
-        x: 3180
+        x: 5500
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,19 +355,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0bd17048cd531a44bb5c95c58daa328
+      spriteID: cc4e79a958baaec40b6fc3c263e527fa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_11
+      name: axe_dig_11
       rect:
         serializedVersion: 2
-        x: 3498
+        x: 6050
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,19 +375,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42fa5eed328511c48b691c2c344250ce
+      spriteID: 270d17ced9b32ba4cb3417a8138bc73e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_walk_12
+      name: axe_dig_12
       rect:
         serializedVersion: 2
-        x: 3816
+        x: 6600
         y: 0
-        width: 318
-        height: 260
+        width: 550
+        height: 631
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,7 +395,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f49a822623c876d42b9a66897a31008d
+      spriteID: 3ab5bbd9924b0bd46a38415c23728f83
       vertices: []
       indices: 
       edges: []
@@ -403,7 +403,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 16b4b34c09736be4287a2fd87147855c
+    spriteID: a2e173fbfed8e0c4ab66aa1947d8d0d5
     vertices: []
     indices: 
     edges: []
