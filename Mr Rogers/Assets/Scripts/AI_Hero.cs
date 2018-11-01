@@ -41,7 +41,7 @@ public class AI_Hero : AI {
         if (target)
         {
             Vector3 bow = (target.transform.position - crosshair.position);
-            bow.y = crosshair.position.y;
+            bow.y = 0f;
             bow.Normalize();
             GameObject fly = Instantiate(arrow, crosshair.position + bow, Quaternion.identity);
             fly.transform.right = bow;
