@@ -86,7 +86,8 @@ public class AI : MonoBehaviour {
     }
     protected virtual void Target()
     {
-        move = Vector3.up * body.velocity.y;
+        move = Vector3.zero;
+        move.y = body.velocity.y;
         body.velocity = move;
         animator.SetBool("left", target.transform.position.x < transform.position.x);
         if (timer > 1f)
