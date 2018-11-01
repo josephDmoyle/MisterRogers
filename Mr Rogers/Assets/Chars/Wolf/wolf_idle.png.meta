@@ -15,6 +15,19 @@ TextureImporter:
     21300020: wolf_idleSheet_10
     21300022: wolf_idleSheet_11
     21300024: wolf_idleSheet_12
+    21300026: wolf_idle_0
+    21300028: wolf_idle_1
+    21300030: wolf_idle_2
+    21300032: wolf_idle_3
+    21300034: wolf_idle_4
+    21300036: wolf_idle_5
+    21300038: wolf_idle_6
+    21300040: wolf_idle_7
+    21300042: wolf_idle_8
+    21300044: wolf_idle_9
+    21300046: wolf_idle_10
+    21300048: wolf_idle_11
+    21300050: wolf_idle_12
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -141,261 +154,261 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wolf_idleSheet_0
+      name: wolf_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acfbddb6673ccef4e829345aea723d5c
+      spriteID: 1f15be3389e355a4b93ecb4b45f88d26
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_1
+      name: wolf_idle_1
       rect:
         serializedVersion: 2
         x: 905
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a0d723d8af42046890b81a9473d735
+      spriteID: bc0d2e01737bde44da854aa21f3dcef7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_2
+      name: wolf_idle_2
       rect:
         serializedVersion: 2
         x: 1810
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 771c0d2b29731b445a7dc4c00b34d52b
+      spriteID: ac94141f23fb1714bad6804ed5bb0197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_3
+      name: wolf_idle_3
       rect:
         serializedVersion: 2
         x: 2715
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f621ad7b78999d34da3bf391dc4b44d2
+      spriteID: 8fce0f5971245534183369cc93cf360e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_4
+      name: wolf_idle_4
       rect:
         serializedVersion: 2
         x: 3620
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21da44916220b354b85cadc0500e7365
+      spriteID: 3770b13e408bd7445ad2f3f6c925d1b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_5
+      name: wolf_idle_5
       rect:
         serializedVersion: 2
         x: 4525
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f40741ea163b33c4ca9037d8350e1e1c
+      spriteID: fa9d978688960fa46bb3a24549ac1d74
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_6
+      name: wolf_idle_6
       rect:
         serializedVersion: 2
         x: 5430
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8eac544072a410840825d939f248bce6
+      spriteID: d30d5ae2b148a1443909e60de14af8ff
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_7
+      name: wolf_idle_7
       rect:
         serializedVersion: 2
         x: 6335
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac21acc71d79e124cbf02db0cc9da7fc
+      spriteID: 0b63b2b04e7a2924d863404e5610d95c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_8
+      name: wolf_idle_8
       rect:
         serializedVersion: 2
         x: 7240
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30dce61bd58117847af4b4ae8ac3fef9
+      spriteID: f553d327ebac73944967c498734be3b7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_9
+      name: wolf_idle_9
       rect:
         serializedVersion: 2
         x: 8145
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d28be36b5bd90114fb876f110086aaad
+      spriteID: adfb97143a4f3174ca023a8cf4a72291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_10
+      name: wolf_idle_10
       rect:
         serializedVersion: 2
         x: 9050
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55071c6f072c0cf4c9af803f2ab6598f
+      spriteID: cecdfe22dd6839246a7d7580c0fb019a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_11
+      name: wolf_idle_11
       rect:
         serializedVersion: 2
         x: 9955
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 998d965d2847c06498e8a8147ff952ae
+      spriteID: 9153d9161edad3340a68821b99d27bfa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_idleSheet_12
+      name: wolf_idle_12
       rect:
         serializedVersion: 2
         x: 10860
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2de19c041dbc8478e4e5d1a42bb4ed
+      spriteID: 0fc302989ea096944b5646883cc9f555
       vertices: []
       indices: 
       edges: []

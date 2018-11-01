@@ -14,6 +14,18 @@ TextureImporter:
     21300018: wolf_walkSheet_9
     21300020: wolf_walkSheet_10
     21300022: wolf_walkSheet_11
+    21300024: wolf_walk_0
+    21300026: wolf_walk_1
+    21300028: wolf_walk_2
+    21300030: wolf_walk_3
+    21300032: wolf_walk_4
+    21300034: wolf_walk_5
+    21300036: wolf_walk_6
+    21300038: wolf_walk_7
+    21300040: wolf_walk_8
+    21300042: wolf_walk_9
+    21300044: wolf_walk_10
+    21300046: wolf_walk_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -140,241 +152,241 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wolf_walkSheet_0
+      name: wolf_walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0bbb24805ac5b245976bd7f5d04591b
+      spriteID: c58559909d5aaea42bebc6a197c7bc0f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_1
+      name: wolf_walk_1
       rect:
         serializedVersion: 2
         x: 905
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae941a855cce57c49bb898fa5337d650
+      spriteID: 6001752407800e14fb327c7917ec5ceb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_2
+      name: wolf_walk_2
       rect:
         serializedVersion: 2
         x: 1810
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e04ed10b864783439ea57361d84bcac
+      spriteID: 73bac8954fafd3e45be37321ecd4b917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_3
+      name: wolf_walk_3
       rect:
         serializedVersion: 2
         x: 2715
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9189f5ee230ada469b78f2188c82bd9
+      spriteID: c253a07eb85766e41a7f7d12cc616ec2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_4
+      name: wolf_walk_4
       rect:
         serializedVersion: 2
         x: 3620
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3e804fbf68bf664f8bbef67bf86f688
+      spriteID: 723c128f49ff10e4084e64cc6ffde609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_5
+      name: wolf_walk_5
       rect:
         serializedVersion: 2
         x: 4525
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e781d8769622b48969e20c88abf3d2
+      spriteID: 212d8f07cd6749f4092779ca886cffd2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_6
+      name: wolf_walk_6
       rect:
         serializedVersion: 2
         x: 5430
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d35182291811bd4dbc769fb0e7f2cce
+      spriteID: 2a53699eb75503049939c6931fea9039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_7
+      name: wolf_walk_7
       rect:
         serializedVersion: 2
         x: 6335
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d02ad6876161641bd4ddf1a80c5929
+      spriteID: 4f5ccaf89aec3e141afe931052870a70
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_8
+      name: wolf_walk_8
       rect:
         serializedVersion: 2
         x: 7240
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b43830b422c0214498c41ffb5d62555
+      spriteID: 99d165622fb8bd94db99e2b1f6cf4a36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_9
+      name: wolf_walk_9
       rect:
         serializedVersion: 2
         x: 8145
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797eac6c7abaf1f4a833cf45c7bb68ac
+      spriteID: 1d0df30d0f1b0a64c9e92cbd6fedf0d0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_10
+      name: wolf_walk_10
       rect:
         serializedVersion: 2
         x: 9050
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0cc6d24b7f137849aaefd23ae97258e
+      spriteID: 792d70822cbf22d4f805174fa91ad314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_walkSheet_11
+      name: wolf_walk_11
       rect:
         serializedVersion: 2
         x: 9955
         y: 0
         width: 905
         height: 625
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08069d61b56eb8947bd0d96bdbd0ae7c
+      spriteID: a2e551a9e0ba4f744be3ffe69aad2b5b
       vertices: []
       indices: 
       edges: []
