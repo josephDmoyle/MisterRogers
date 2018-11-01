@@ -104,7 +104,7 @@ namespace HoloToolkit.Unity.InputModule
         public void StartDragging(Vector3 initialDraggingPosition)
         {
 
-            _ai.animator.SetBool("grasped", true);
+            _ai.grabbed = true;
             if (!IsDraggingEnabled)
             {
                 return;
@@ -302,7 +302,7 @@ namespace HoloToolkit.Unity.InputModule
 
             // Remove self as a modal input handler
             InputManager.Instance.PopModalInputHandler();
-            _ai.animator.SetBool("grasped", false);
+            _ai.grabbed = false;
             isDragging = false;
             currentInputSource = null;
             currentInputSourceId = 0;
@@ -348,7 +348,7 @@ namespace HoloToolkit.Unity.InputModule
             if (currentInputSource != null &&
                 eventData.SourceId == currentInputSourceId)
             {
-                _ai.animator.SetBool("grasped", false);
+                _ai.grabbed = false;
                 eventData.Use(); // Mark the event as used, so it doesn't fall through to other handlers.
                 StopDragging();
             }
@@ -360,7 +360,7 @@ namespace HoloToolkit.Unity.InputModule
 
             if (isDragging)
             {
-                _ai.animator.SetBool("grasped", true);
+                _ai.grabbed = true;
                 // We're already handling drag input, so we can't start a new drag operation.
                 return;
             }

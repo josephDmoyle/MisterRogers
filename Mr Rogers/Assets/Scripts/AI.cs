@@ -13,7 +13,7 @@ public class AI : MonoBehaviour {
     protected Vector3 move = Vector3.zero;
 
     protected Rigidbody body;
-    public Animator animator;
+    protected Animator animator;
     protected GameObject target;
 
     protected int state = WANDER;
@@ -21,8 +21,7 @@ public class AI : MonoBehaviour {
     protected void Awake()
     {
         body = GetComponent<Rigidbody>();
-        GameObject _red = GameObject.Find("Red");
-        animator = _red.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 	
 	void FixedUpdate () {
@@ -65,8 +64,10 @@ public class AI : MonoBehaviour {
                 move.x = Random.Range(-1f, 1f);
                 move.y = 0f;
                 move.z = Random.Range(-1f, 1f);
+                if ((move.x != 0f) || (move.z != 0f))
+                    move.Normalize();
                 move *= speed;
-                if (move.x < 0f)
+                if (move.x <= 0f)
                     animator.SetBool("left", true);
                 else if (move.x > 0f)
                     animator.SetBool("left", false);
