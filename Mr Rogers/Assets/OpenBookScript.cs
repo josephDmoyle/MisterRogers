@@ -37,7 +37,7 @@ public class OpenBookScript : MonoBehaviour {
             
         }
 
-        if (flag>3000)
+        if (flag>4000)
         {
             SceneManager.LoadScene("LevelTest"); 
             Debug.Log("STOPPPEd");
